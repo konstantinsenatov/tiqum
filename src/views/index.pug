@@ -1,0 +1,24 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "TIQUM"
+
+block content
+	.wrapper.main-page
+		include ../blocks/modules/header/header
+		.page.page-main
+			include ../blocks/modules/hero/hero
+			include ../blocks/modules/services/services
+			include ../blocks/modules/realization/realization
+			include ../blocks/modules/weright/weright
+			include ../blocks/modules/wehelp/wehelp
+			include ../blocks/modules/confirm/confirm
+		include ../blocks/modules/footer/footer
+
+block scripts
+	script(src="https://code.jquery.com/jquery-3.6.1.min.js")
+	script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+
+	script(src="https://raw.githubusercontent.com/kennethcachia/Background-Check/master/background-check.min.js")
+	script(src="js/main.js")

@@ -1,0 +1,27 @@
+.right-content-blog__btn {
+	font-family: 'Suisse Intl';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 60px;
+		@media (max-width: 1919px){
+			margin-top: 45px;
+		}
+		@media (max-width: 1440px){
+			font-size: 14px;
+			line-height: 16px;
+			  
+		}
+		@media (max-width: 767px){
+			width: 100%;
+			font-size: 3.200vw;
+			line-height: 3.733vw;
+			margin-top: 5.333vw;
+		}
+}

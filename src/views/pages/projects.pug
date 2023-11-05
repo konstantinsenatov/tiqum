@@ -1,0 +1,160 @@
+extends ../layouts/default
+
+block variables
+	- const title = "TIQUM";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.container 
+				.page-header.flex-lr 
+					.page-header__left.flex-lr__left
+						a(href="#").link-hv Бесплатная консультация  →
+					.page-header__right.flex-lr__right.page-header__spans 
+						h1.general-title 
+							span Проекты
+							span (+350)
+			.projects
+				.container
+					.projects__items
+						.items-projects  
+							.item-projects.item-projects-big
+								a(href="#").item-projects__content
+									figure
+										.item-projects__header
+											.item-projects__title Mark.moda  
+											.item-projects__btns 
+												.item-projects__btn Backend
+												.item-projects__btn Web
+												.item-projects__btn Mobile
+											.item-projects__text 
+												|Маркетплейс, социальная 
+												br
+												|сеть, конструктор образов
+										.item-projects__img 
+											img(src="img/item-projects/mark.png", alt="alt")
+										.item-projects-bronze 	
+											img(src="img/svg/bronze.svg", alt="alt")
+							.item-projects
+								a(href="#").item-projects__content.item-projects-content-grey
+									figure
+										.item-projects__header
+											.item-projects__title Skilli 
+											.item-projects__btns 
+												.item-projects__btn Backend
+												.item-projects__btn Web
+												.item-projects__btn Mobile
+											.item-projects__text 
+												|Приложение для развития 
+												br
+												|полезных навыков у детей
+										.item-projects__img 
+											img(src="img/item-projects/skill.png", alt="alt")
+							.item-projects
+								a(href="#").item-projects__content.item-projects-content-blue
+									figure
+										.item-projects__header
+											.item-projects__title Head.z  
+											.item-projects__btns 
+												.item-projects__btn Backend
+												.item-projects__btn Web
+												.item-projects__btn Mobile
+											.item-projects__text 
+												|Тиндер для поиска 
+												br
+												|разработчиков
+										.item-projects__img 
+											img(src="img/item-projects/head.png", alt="alt")
+							.item-projects.item-projects-dark
+								a(href="#").item-projects__content.item-projects-content-blue
+									figure
+										.item-projects__header
+											.item-projects__title ATM и терминалы оплаты банка 
+											.item-projects__btns 
+												.item-projects__btn Backend
+												.item-projects__btn Web
+												.item-projects__btn Mobile
+											.item-projects__text 
+												|Интерфейс и верстка экранов для 
+												br
+												|банкоматов NCR, WinCor, Nautilus и 
+												br
+												|платежных терминалов
+										.item-projects__img 
+											img(src="img/item-projects/atm.png", alt="alt")
+							.item-projects
+								a(href="#").item-projects__content.item-projects-content-grey-dark
+									figure
+										.item-projects__header
+											.item-projects__title Romeks 
+											.item-projects__btns 
+												.item-projects__btn Backend
+												.item-projects__btn Web
+												.item-projects__btn Mobile
+											.item-projects__text 
+												|Сайты застройщика Ромекс 
+												br
+												|Девелопмент
+										.item-projects__img 
+											img(src="img/item-projects/romeks.png", alt="alt")
+					.projects__subtitle-wrapper.flex-lr
+						.flex-lr__left
+						.projects__subtitle.flex-lr__right 
+							.projects__subtitle-inner
+								|С 2007 года мы запустили более 350 проектов. Наболее интересные из них мы описали, об остальных расскажем 
+								span на встрече.
+
+					.archive-projects
+						.archive-projects__header.flex-lr
+							.flex-lr__left 
+							.archive-projects__title.general-title.flex-lr__right Архив
+						.archive-projects__items 
+							.archive-projects__item.flex-lr
+								.archive-projects__left.flex-lr__left 
+									.archive-projects__btns 
+										.archive-projects__btn Backend
+										.archive-projects__btn Web
+										.archive-projects__btn.archive-projects__btn-hide Mobile
+										.archive-projects__btn.archive-projects__btn-show-more +5
+								.archive-projects__right.flex-lr__right
+									.archive-projects__right-title Сайт Белебеевского молочного комбината
+									.archive-projects__right-circle.archive-projects__right-circle-gold 
+									.archive-projects__right-year 2018
+							.archive-projects__item.flex-lr
+								.archive-projects__left.flex-lr__left 
+									.archive-projects__btns 
+										.archive-projects__btn Backend
+										.archive-projects__btn Web
+										.archive-projects__btn.archive-projects__btn-hide Mobile
+										.archive-projects__btn.archive-projects__btn-show-more +5
+								.archive-projects__right.flex-lr__right
+									.archive-projects__right-title Сайт Национального молодежного театра РБ
+									.archive-projects__right-circle.archive-projects__right-circle-grey-dark
+									.archive-projects__right-year 2018
+							.archive-projects__item.flex-lr
+								.archive-projects__left.flex-lr__left 
+									.archive-projects__btns 
+										.archive-projects__btn Backend
+										.archive-projects__btn Web
+										.archive-projects__btn.archive-projects__btn-show-more +5
+								.archive-projects__right.flex-lr__right
+									.archive-projects__right-title Портал занятости населения Минтруда РБ
+									.archive-projects__right-year 2018
+							.archive-projects__item.flex-lr
+								.archive-projects__left.flex-lr__left 
+									.archive-projects__btns 
+										.archive-projects__btn Backend
+										.archive-projects__btn.archive-projects__btn-show Web
+										.archive-projects__btn.archive-projects__btn-show-more +5
+								.archive-projects__right.flex-lr__right
+									.archive-projects__right-title Сайт Союза предпринимателей
+									.archive-projects__right-year 2018
+
+
+		include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="https://code.jquery.com/jquery-3.6.1.min.js")
+	script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+	script(src="js/main.js")

@@ -1,0 +1,104 @@
+extends ../layouts/default
+
+block variables
+    - const title = "TIQUM";
+
+block content
+    .wrapper.main-page
+        include ../../blocks/modules/header/header
+        .page(style="position:relative" )
+            .new-page.new-page1
+                .new-page__image(data-depth='0.2')
+                    img(src="img/pages/new-page/img1.jpg", alt="alt")
+                .new-page__header
+                    .container
+                        .flex-lr
+                            .flex-lr__left
+                            .flex-lr__right
+                                .new-page__title-small Консалтинг по цифровой<br> трансформации
+                .new-page1__serveces-title
+                    .container
+                        .flex-lr
+                            .flex-lr__left
+
+                            .flex-lr__right
+                .new-page1__services
+                    .container
+                        .flex-lr
+                            .flex-lr__left
+                                ul
+                                    li
+                                        a(href="#") Консалтинг по цифровой трансформации
+                                    li
+                                        a(href="#") Продуктовая веб-разработка
+                                    li
+                                        a(href="#") Мобильная разработка
+                                    li
+                                        a(href="#") Дизайн и проектирование интерфейсов
+                                    li
+                                        a(href="#") Развитие и поддержка IT-проектов
+                                    li
+                                        a(href="#") MVP за 3 месяца
+                            .flex-lr__right
+                                .new-page1__services-items
+                                    a(href="")
+                                        figure
+                                            .item-services-new-page1
+                                                .item-services-new-page1__title.general-title Проводим сессии дизайн-<br>мышления
+                                                    span и IT-аудит,<br> формируем стратегию<br> цифровой трансформации<br> для решения бизнес-задач
+                                                .item-services-new-page1__number 01
+                                    a(href="")
+                                        figure
+                                            .item-services-new-page1
+                                                .item-services-new-page1__title.general-title Улучшаем бизнес-<br>показатели
+                                                    span и ускоряем<br> работу интернет-проектов
+                                                .item-services-new-page1__number 02
+                                    a(href="")
+                                        figure
+                                            .item-services-new-page1
+                                                .item-services-new-page1__title.general-title UX-аудит: улучшаем<br> конверсию
+                                                .item-services-new-page1__number 03
+                                    a(href="")
+                                        figure
+                                            .item-services-new-page1
+                                                .item-services-new-page1__title.general-title Строим IT-архитектуру<br> под цели компании
+                                                .item-services-new-page1__number 04
+                                    .item-services-new-page1.item-services-new-page1--small
+                                        p Используем свой опыт в digital и<br>  знания, накопленные за 15 лет,<br>  для формирования стратегии<br>  цифровой трансформации<br>  бизнеса
+                .archive-projects.new-page1-archive-projects
+                    .container
+                        .archive-projects__items
+                            .archive-projects__item.flex-lr
+                                .archive-projects__left.flex-lr__left
+                                    .archive-projects__btns
+                                        .archive-projects__btn Backend
+                                        .archive-projects__btn Web
+                                        .archive-projects__btn Mobile
+                                .archive-projects__right.flex-lr__right
+                                    .archive-projects__right-title Unicloud<br>  Business 365
+                                    .archive-projects__right-year 2018
+                            .archive-projects__item.flex-lr
+                                .archive-projects__left.flex-lr__left
+                                    .archive-projects__btns
+                                        .archive-projects__btn Backend
+                                        .archive-projects__btn Web
+                                        .archive-projects__btn Mobile
+                                .archive-projects__right.flex-lr__right
+                                    .archive-projects__right-title Интернет-банк «Уралсиб»
+                                    .archive-projects__right-year 2018
+                            .archive-projects__item.flex-lr
+                                .archive-projects__left.flex-lr__left
+                                    .archive-projects__btns
+                                        .archive-projects__btn Backend
+                                        .archive-projects__btn Web
+                                        .archive-projects__btn Mobile
+                                .archive-projects__right.flex-lr__right
+                                    .archive-projects__right-title Onefit
+                                    .archive-projects__right-year 2018
+
+        include ../../blocks/modules/footer/footer
+
+block scripts
+    script(src="https://code.jquery.com/jquery-3.6.1.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    script(src="js/main.js")

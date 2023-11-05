@@ -1,0 +1,342 @@
+.page-header {
+	display: flex;
+	.page-header__left {
+		flex: 1 1 auto;
+		font-family: 'Suisse Intl';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: #000000;
+		@media (max-width: 1440px){
+			font-size: 14px;
+			line-height: 16px;
+
+		}
+		@media (max-width: 1024px){
+			font-size: 1.367vw;
+			line-height: 1.563vw;
+		}
+		@media (max-width: 767px){
+			margin-top: 2.667vw;
+			font-size: 3.200vw;
+			line-height: 3.733vw;
+		}
+	}
+	.page-header__spans {
+		@media (max-width: 767px){
+			flex: 1 1 100%;
+			order: -1;
+		}
+		.general-title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			span {
+				color: #000000;
+
+				&:nth-child(2) {
+					opacity: 0.2;
+				}
+			}
+		}
+	}
+}
+.projects {
+	&__subtitle {
+		font-family: 'Suisse Intl';
+		font-style: normal;
+		font-weight: 450;
+		font-size: 48px;
+		line-height: 108.8%;
+		letter-spacing: -0.03em;
+		color: #000000;
+		flex: 0 1 65%;
+		margin-top: 30px;
+		@media (max-width: 1919px){
+			font-size: 36px;
+			margin-top: 20px;
+		}
+		@media (max-width: 1440px){
+			font-size: 28px;
+			line-height: 32px;
+
+			margin-top: 30px;
+			br {
+				display: none;
+			}
+		}
+		@media (max-width: 1024px){
+			font-size: 2.734vw;
+			line-height: 3.125vw;
+			margin-top: 2.930vw;
+			flex: 1 1 100%;
+		}
+		@media (max-width: 767px){
+			font-size: 5.333vw;
+			line-height: 6.133vw;
+			margin-top: 2.667vw;
+		}
+		span {
+			color: #0047FF;
+		}
+		&-wrapper {
+			display: flex;
+			justify-content: flex-end;
+		}
+		&-inner {
+			max-width: 810px;
+			@media (max-width: 1919px){
+				max-width: 610px;
+			}
+			@media (max-width: 1440px){
+				max-width: 530px;
+			}
+			@media (max-width: 1024px){
+				max-width: 51.758vw;
+			}
+			@media (max-width: 767px){
+				max-width: 95%;
+			}
+		}
+	}
+}
+
+
+
+.archive-projects {
+	margin-top: 220px;
+	@media (max-width: 1919px){
+		margin-top: 165px;
+	}
+	@media (max-width: 1440px){
+		margin-top: 130px;
+	}
+	@media (max-width: 1024px){
+		margin-top: 10.742vw;
+	}
+	@media (max-width: 767px){
+		margin-top: 13.333vw;
+	}
+	&__header {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__title {
+		flex: 0 1 65%;
+	}
+
+	&__items {
+		margin-top: 30px;
+		@media (max-width: 1024px){
+			margin-top: 2.930vw;
+		}
+		@media (max-width: 767px){
+			margin-top: 8vw;
+		}
+	}
+
+	&__item {
+		padding: 30px 0;
+		display: flex;
+		border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+		cursor: pointer;
+		transition: all 0.5s ease 0s;
+		@media (max-width: 1024px){
+			flex-wrap: nowrap!important;
+			align-items: flex-start;
+			padding: 2.930vw 0;
+			border-top: 0.098vw solid rgba($color: #000000, $alpha: 0.2);
+		}
+		@media (max-width: 767px){
+			flex-wrap: wrap !important;
+			padding: 4vw 0;
+			border-top: 0.267vw solid rgba($color: #000000, $alpha: 0.2);
+		}
+		&.js-opacity-item {
+			border-top: 1px solid rgba($color: #000000, $alpha: 1);
+			opacity: 0.2;
+			@media (max-width: 1024px){
+				border-top: 0.098vw solid rgba($color: #000000, $alpha: 1);
+			}
+			@media (max-width: 767px){
+				border-top: 0.267vw solid rgba($color: #000000, $alpha: 1);
+			}
+		}
+		&.js-active-item {
+			color: #000000;
+			opacity: 1;
+		}
+	}
+
+
+	&__left {
+		flex: 1 1 auto;
+		@media (max-width: 767px){
+			flex: 1 0 100%!important;
+			display: flex;
+			justify-content: flex-end;
+			margin-top: -4.533vw;
+		}
+	}
+
+	&__btns {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		row-gap: 10px;
+		@media (max-width: 1024px){
+			row-gap: 0.977vw;
+		}
+		@media (max-width: 767px){
+			max-width: 75%;
+			justify-content: flex-end;
+			row-gap: 2.667vw;
+		}
+	}
+
+	&__btn {
+		padding: 11px 16px;
+		background: #F5F5F5;
+		border-radius: 25px;
+		margin-right: 15px;
+		font-family: 'Suisse Intl';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: right;
+		color: #000000;
+		@media (max-width: 1919px){
+			padding: 8px 12px;
+		}
+		@media (max-width: 1440px){
+			font-size: 14px;
+			line-height: 16px;
+
+			padding: 6px 10px;
+		}
+		@media (max-width: 1024px){
+			padding: 0.586vw 0.977vw;
+			border-radius: 2.441vw;
+			margin-right: 1.465vw;
+			font-size: 1.758vw;
+			line-height: 2.051vw;
+		}
+		@media (max-width: 767px){
+			font-size: 3.200vw;
+			line-height: 3.733vw;
+			padding: 1.067vw 1.600vw;
+			margin-right: 0px;
+			margin-left: 1.600vw;
+		}
+		&-hide {
+			@media (max-width: 1440px){
+				display: none;
+			}
+		}
+		&-show {
+			display: none;
+			@media (max-width: 1440px){
+				display: block;
+			}
+		}
+		&-show-more {
+			display: none;
+			@media (max-width: 1440px){
+				display: block;
+			}
+		}
+	}
+
+	&__right {
+		flex: 0 1 65%;
+		display: flex;
+		@media (max-width: 1024px) {
+			flex: 0 1 65%;
+		}
+		@media (max-width: 767px){
+			margin-left: 0;
+			flex: 1 1 100%!important;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			order: -1;
+		}
+		&-title {
+			flex: 1 1 auto;
+			font-family: 'Suisse Intl';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 32px;
+			line-height: 126.8%;
+
+			@media (max-width: 1440px){
+				font-size: 24px;
+			}
+			@media (max-width: 1024px){
+				font-size: 2.344vw;
+			}
+			@media (max-width: 767px){
+				font-size: 4.800vw;
+				flex: 1 1 100%;
+			}
+		}
+
+		&-circle {
+			width: 29px;
+			height: 29px;
+			min-width: 29px;
+			min-height: 29px;
+			border-radius: 50%;
+			@media (max-width: 1919px){
+				width: 21px;
+				height: 21px;
+				min-width: 21px;
+				min-height: 21px;
+			}
+			@media (max-width: 1440px){
+				display: none;
+			}
+			&-gold {
+				background-color: #B9AF79;
+			}
+			&-grey-dark {
+				background-color: #E4E4E4;
+			}
+			&-grey {
+				background-color: #f4eaea;
+			}
+			&-blue {
+				background-color: #e3f0fe;
+			}
+		}
+
+		&-year {
+			margin-left: 120px;
+			font-family: 'Suisse Intl';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 21px;
+
+			@media (max-width: 1440px){
+				font-size: 14px;
+				line-height: 16px;
+			}
+			@media (max-width: 1024px){
+				font-size: 1.367vw;
+				line-height: 1.563vw;
+				margin-left: 11.719vw;
+			}
+			@media (max-width: 767px){
+				font-size: 3.200vw;
+				line-height: 3.733vw;
+				margin-left: 0;
+				opacity: 0.4;
+				margin-top: 5.333vw;
+			}
+		}
+	}
+}

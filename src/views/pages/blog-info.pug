@@ -1,0 +1,62 @@
+extends ../layouts/default
+
+block variables
+	- const title = "TIQUM";
+
+block content 
+	.wrapper 
+		include ../../blocks/modules/header/header 
+		.page 
+			.container 
+				.page-header 
+					.flex-lr 
+						.flex-lr__left 
+						.flex-lr__right 
+							h1.general-title Наш блог 
+			.blog-info 
+				.container
+					.blog-info__container
+						.blog-items
+							a(href='').blog-items__item  
+								figure
+									.blog-items__img 
+										img(src="img/pages/blog-info/11.jpg", alt="alt")
+									.blog-items__text 
+										|Miro vs. FigJam: Выбираем 
+										br
+										|a Workshopping,
+							a(href='').blog-items__item  
+								figure
+									.blog-items__img 
+										img(src="img/pages/blog-info/12.jpg", alt="alt")
+									.blog-items__text 
+										|Miro vs. FigJam: Выбираем a 
+										br
+										|Workshopping, Whiteboard and 
+										br
+										|Collaboration Web App
+							a(href='').blog-items__item  
+								figure
+									.blog-items__img 
+										img(src="img/pages/blog-info/11.jpg", alt="alt")
+									.blog-items__text 
+										|Miro vs. FigJam: Выбираем 
+										br
+										|a Workshopping,
+							a(href='').blog-items__item  
+								figure
+									.blog-items__img 
+										img(src="img/pages/blog-info/12.jpg", alt="alt")
+									.blog-items__text 
+										|Miro vs. FigJam: Выбираем a 
+										br
+										|Workshopping, Whiteboard and 
+										br
+										|Collaboration Web App
+
+		include ../../blocks/modules/footer/footer 
+
+block scripts
+	script(src="https://code.jquery.com/jquery-3.6.1.min.js") 
+	script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js") 
+	script(src="js/main.js")

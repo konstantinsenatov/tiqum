@@ -1,0 +1,615 @@
+.page-header {
+  .page-header__flex-lr {
+    position: relative;
+
+    .flex-lr__left {
+      @media (max-width: 767px) {
+        order: -1;
+        margin-top: 0;
+      }
+    }
+
+    .flex-lr__right {
+      @media (max-width: 1024px) {
+        margin-top: 0;
+      }
+
+      @media (max-width: 767px) {
+        margin-top: 12vw;
+      }
+
+      .general-title {
+        @media (max-width: 1024px) {
+          max-width: 50vw;
+        }
+
+        @media (max-width: 767px) {
+          max-width: 98vw;
+        }
+      }
+    }
+  }
+
+  .page-header__left {
+    @media (max-width: 1024px) {
+      flex: 1 1 100% !important;
+    }
+  }
+
+  .page-header__btns {
+    display: flex;
+    row-gap: 10px;
+
+    @media (max-width: 1024px) {
+      max-width: 60%;
+      flex-wrap: wrap;
+      row-gap: 0.977vw;
+    }
+
+    @media (max-width: 767px) {
+      row-gap: 2.667vw;
+    }
+  }
+
+  .page-header__btn {
+    font-family: "Suisse Intl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    color: #000000;
+    padding: 11px 16px;
+    background: #f5f5f5;
+    border-radius: 25px;
+    margin-right: 15px;
+
+    @media (max-width: 1919px) {
+      padding: 8px 12px;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 1440px) {
+      font-size: 14px;
+      line-height: 16px;
+      color: #2a2a2a;
+      padding: 6px 10px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 1.367vw;
+      line-height: 1.563vw;
+      padding: 0.781vw 1.172vw;
+      margin-right: 0.977vw;
+      margin-right: 1.465vw;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 3.2vw;
+      line-height: 3.733vw;
+      padding: 1.067vw 1.6vw;
+      border-radius: 6.667vw;
+    }
+  }
+
+  .page-header__medals {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      margin-top: 15vw;
+    }
+  }
+
+  .page-header__title {
+    @media (max-width: 1024px) {
+      flex: 1 1 100%;
+    }
+  }
+
+  .page-header__labels {
+    display: flex;
+
+    @media (max-width: 767px) {
+      flex: 1 1 100%;
+      position: absolute;
+      top: 8vw;
+      right: 0;
+    }
+  }
+
+  .page-header__label {
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+
+    @media (max-width: 1919px) {
+      width: 55px;
+      height: 55px;
+      margin-left: 15px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 5.371vw;
+      height: 5.371vw;
+      margin-left: 1.465vw;
+    }
+
+    @media (max-width: 767px) {
+      width: 12vw;
+      height: 12vw;
+      margin-left: 2.667vw;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.portfolio {
+  p {
+    font-family: "Suisse Intl";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.5;
+
+    @media (max-width: 1439px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 1.367vw;
+      line-height: 1.563vw;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 3.2vw;
+      line-height: 4.533vw;
+    }
+
+    &:not(:first-child) {
+      margin-top: 30px;
+
+      @media (max-width: 1919px) {
+        margin-top: 20px;
+      }
+
+      @media (max-width: 1440px) {
+        margin-top: 30px;
+      }
+
+      @media (max-width: 1024px) {
+        margin-top: 2.93vw;
+      }
+
+      @media (max-width: 767px) {
+        margin-top: 4vw;
+      }
+    }
+  }
+
+  .portfolio__img {
+    position: relative;
+    padding-top: 44%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .project-portfolio {
+    padding-top: 30px;
+    padding-bottom: 220px;
+    background-color: #e5e5e5;
+
+    @media (max-width: 1919px) {
+      padding-top: 20px;
+      padding-bottom: 170px;
+    }
+
+    @media (max-width: 1440px) {
+      padding-bottom: 110px;
+    }
+
+    @media (max-width: 1024px) {
+      padding-top: 1.953vw;
+      padding-bottom: 2.93vw;
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 2.667vw;
+      padding-bottom: 0px;
+    }
+
+    &__container {}
+
+    &__top {
+      padding-bottom: 170px;
+
+      @media (max-width: 1919px) {
+        padding-bottom: 110px;
+      }
+
+      @media (max-width: 1024px) {
+        padding-bottom: 10.742vw;
+        flex-wrap: nowrap;
+      }
+
+      @media (max-width: 767px) {
+        padding-bottom: 2.667vw;
+        flex-wrap: wrap;
+      }
+
+      .flex-lr__left {
+        @media (max-width: 1024px) {
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        @media (max-width: 767px) {
+          justify-content: stretch;
+        }
+      }
+
+      .flex-lr__right {
+        @media (max-width: 1024px) {
+          flex: 1 1 auto !important;
+          order: -1;
+        }
+
+        @media (max-width: 767px) {
+          flex: 1 1 100% !important;
+          order: 2;
+          margin-top: 7.333vw;
+        }
+
+        .project-portfolio__title {
+          @media (max-width: 1024px) {
+            max-width: 45vw;
+          }
+
+          @media (max-width: 767px) {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    &__left {}
+
+    &__link {
+      font-family: "Suisse Intl";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #000000;
+
+      @media (max-width: 1440px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 1.367vw;
+        line-height: 1.563vw;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 3.2vw;
+        line-height: 3.733vw;
+        margin-bottom: 3.333vw;
+        display: block;
+      }
+    }
+
+    &__right {}
+
+    &__title, .field--name-field-title {
+      margin-top: 30px;
+      max-width: 750px;
+      font-family: "Suisse Intl";
+      font-style: normal;
+      font-weight: 450;
+      font-size: 48px;
+      line-height: 108.8%;
+      letter-spacing: -0.03em;
+      color: #2a2a2a;
+
+      @media (max-width: 1919px) {
+        font-size: 36px;
+      }
+
+      @media (max-width: 1440px) {
+        font-size: 28px;
+        line-height: 32px;
+        color: #2a2a2a;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 2.734vw;
+        line-height: 3.125vw;
+      }
+
+      @media (max-width: 1024px) {
+        flex: 1 1 100%;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 5.333vw;
+        line-height: 6.133vw;
+        max-width: 100%;
+      }
+    }
+
+    &__items {}
+
+    &__item {
+      padding-top: 30px;
+      border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+      &:not(:first-child) {
+        margin-top: 100px;
+
+        @media (max-width: 1919px) {
+          margin-top: 55px;
+        }
+
+        @media (max-width: 767px) {
+          margin-top: 14.667vw;
+        }
+      }
+
+      @media (max-width: 1919px) {
+        padding-top: 20px;
+      }
+
+      @media (max-width: 1440px) {
+        padding-top: 2.93vw;
+        border-top: 0.098vw solid rgba($color: #000000, $alpha: 0.2);
+      }
+
+      @media (max-width: 767px) {
+        border-top: 0.267vw solid rgba($color: #000000, $alpha: 0.2);
+        padding-top: 4vw;
+      }
+
+      &-left {}
+
+      &-right {
+
+        p, li {
+          font-family: "Suisse Intl";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+          color: #000000;
+          opacity: 0.5;
+          @media (max-width: 1439px) {
+            font-size: 14px;
+          }
+          @media (max-width: 1024px) {
+            font-size: 1.367vw;
+            line-height: 1.563vw;
+          }
+          @media (max-width: 767px) {
+            font-size: 3.2vw;
+            line-height: 4.533vw;
+          }
+        }
+
+        p {
+          margin-top: 30px;
+          @media (max-width: 1919px) {
+            margin-top: 20px;
+          }
+          @media (max-width: 1440px) {
+            margin-top: 30px;
+          }
+          @media (max-width: 1024px) {
+            margin-top: 2.93vw;
+          }
+          @media (max-width: 767px) {
+            margin-top: 4vw;
+          }
+        }
+
+        div:first-child p:first-child {
+          margin-top: 0;
+        }
+      }
+
+      &-img {
+        @extend .paragraph--type--photos;
+      }
+
+      &-title {
+        max-width: 360px;
+        font-family: "Suisse Intl";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 126.8%;
+        color: #2a2a2a;
+
+        @media (max-width: 1440px) {
+          font-size: 24px;
+        }
+
+        @media (max-width: 1024px) {
+          margin-bottom: 5.859vw;
+          max-width: 35.156vw;
+          font-size: 2vw;
+          margin-right: 1vw;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 4.8vw;
+          margin-bottom: 8vw;
+          max-width: 100%;
+        }
+
+        @media (min-width: 2000px) {
+          max-width: 100%;
+          margin-right: 50px;
+        }
+      }
+    }
+
+    &__bottom {
+      margin-top: 150px;
+      border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+      @media (max-width: 1919px) {
+        margin-top: 130px;
+      }
+
+      @media (max-width: 1440px) {
+        margin-top: 60px;
+      }
+
+      @media (max-width: 1024px) {
+        margin-top: 5.859vw;
+        border-top: 0.098vw solid rgba($color: #000000, $alpha: 0.2);
+      }
+
+      @media (max-width: 767px) {
+        margin-top: 8vw;
+        border-top: 0.267vw solid rgba($color: #000000, $alpha: 0.2);
+      }
+
+      &-item {
+        padding: 30px 0;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+        font-family: "Suisse Intl";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 126.8%;
+        color: #2a2a2a;
+
+        @media (max-width: 1440px) {
+          font-size: 24px;
+        }
+
+        @media (max-width: 1024px) {
+          padding: 2.93vw 0;
+          font-size: 2vw;
+          margin-right: 1vw;
+          border-bottom: 0.098vw solid rgba($color: #000000, $alpha: 0.2);
+        }
+
+        @media (max-width: 767px) {
+          border-bottom: 0.267vw solid rgba($color: #000000, $alpha: 0.2);
+          font-size: 4.8vw;
+          padding: 8vw 0;
+
+          &:first-child {
+            border-top: 0.098vw solid rgba($color: #000000, $alpha: 0.2);
+            margin-top: 4vw;
+          }
+
+          &:last-child {
+            border-bottom: 0px solid rgba($color: #000000, $alpha: 0);
+          }
+        }
+      }
+
+      &-title {
+        max-width: 437px;
+        font-family: "Suisse Intl";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 126.8%;
+        color: #2a2a2a;
+        padding-top: 30px;
+
+        @media (max-width: 1919px) {
+          max-width: 330px;
+        }
+
+        @media (max-width: 1440px) {
+          font-size: 24px;
+          max-width: 290px;
+        }
+
+        @media (max-width: 1024px) {
+          max-width: 42.969vw;
+          font-size: 2vw;
+          margin-right: 1vw;
+          padding-top: 2.93vw;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 4.8vw;
+          padding-top: 4vw;
+          max-width: 100%;
+        }
+
+        @media (min-width: 2000px) {
+          max-width: 100%;
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+
+.next-cases-portfolio {
+  padding: 30px 0 15px;
+
+  @media (max-width: 1024px) {
+    padding: 2.93vw 0 1.465vw;
+  }
+
+  @media (max-width: 767px) {
+    padding: 8vw 0 4vw;
+  }
+
+  &__flex-title {
+    @media (max-width: 1440px) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      br {
+        display: block;
+      }
+    }
+  }
+
+  &__projects {
+    margin-top: 220px;
+
+    @media (max-width: 1919px) {
+      margin-top: 170px;
+    }
+
+    @media (max-width: 1440px) {
+      margin-top: 110px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: 10.742vw;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: 13.333vw;
+    }
+  }
+}

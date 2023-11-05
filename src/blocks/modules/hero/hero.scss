@@ -1,0 +1,309 @@
+.hero {
+	height: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 130px 0 30px;
+	@media (max-width: 1919px){
+		padding: 100px 0 20px;
+	}
+	@media (max-width: 1440px){
+		padding: 70px 0 30px;
+	}
+	@media (max-width: 1024px) {
+		padding: 6.836vw 0 2.930vw;
+	}
+	@media (max-width: 767px){
+		padding: 12vw 0 4vw;
+	}
+	&::after{
+		content:'';
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-color: rgba($color: #000000, $alpha: 0.2);
+	}
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 1;
+	}
+	&__container {
+		flex: 1 1 100%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 2;
+	}
+	&__content {
+		flex: 1 1 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__top {
+		padding: 30px 0;
+		display: flex;
+		border-top: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+		@media (max-width: 1919px){
+			padding: 20px 0;
+		}
+		@media (max-width: 1440px){
+			padding: 15px 0;
+		}
+		@media (max-width: 1024px){
+			padding: 1.465vw 0;
+			border-top: 0.098vw solid rgba($color: #ffffff, $alpha: 0.5);
+			.hero__left {
+				margin-top: 1.465vw;
+			}
+		}
+		@media (max-width: 767px){
+			flex-wrap: wrap;
+			padding: 1.867vw 0;
+			.hero__right {
+				order: -1;
+			}
+			.hero__left {
+				margin-top: 4vw;
+			}
+		}
+	}
+	
+	&__bottom {
+		display: flex;
+		border-top: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+		@media (max-width: 1024px){
+			margin-top: 1.953vw;
+			border-top: 0.098vw solid rgba($color: #ffffff, $alpha: 0.5);
+		}
+		@media (max-width: 767px){
+			flex-wrap: wrap;
+			border: none;
+			.hero__right {
+				flex: 1 1 auto;
+				margin-top: 3.200vw;
+				border-top: 0.267vw solid rgba($color: #ffffff, $alpha: 0.5);
+				border: none;
+			}
+			border-top: 0.267vw solid rgba($color: #ffffff, $alpha: 0.5);
+		}
+	}
+	
+		&__left {
+			flex: 1 1 auto;
+			font-family: 'Suisse Intl';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 21px;
+			color: #FFFFFF;
+			@media (max-width: 1919px){
+				font-size: 14px;
+				line-height: 16px;
+			}
+			@media (max-width: 1440px){
+				font-size: 14px;
+				line-height: 16px;
+			}
+			@media (max-width: 1024px){
+				font-size: 1.367vw;
+				line-height: 1.563vw;
+			}
+			@media (max-width: 767px){
+				flex: 1 1 100%;
+				font-size: 3.200vw;
+				line-height: 3.733vw;
+			}
+			a {
+				transition: all 0.5s ease 0s;
+				svg {
+					path {
+						transition: all 0.5s ease 0s;
+					}
+				}
+				&:hover{
+					color: #0047FF;
+					svg {
+						path {
+							stroke: #0047FF!important;
+						}
+					}
+				}
+			}
+			&-download-link {
+				margin-top: 30px;
+				display: inline-flex;
+				align-items: center;
+				@media (max-width: 1919px){
+					margin-top: 20px;
+				}
+				@media (max-width: 1440px){
+					margin-top: 15px;
+				}
+				@media (max-width: 1024px) {
+					margin-top: 1.465vw;
+				}
+				@media (max-width: 767px){
+					margin-top: 4vw;
+					svg {
+						width: 4.533vw;
+						height: 4.533vw;
+					}
+				}
+				span {
+					display: inline-block;
+					margin-left: 20px;
+					@media (max-width: 1919px){
+						margin-left: 15px;
+					}
+					@media (max-width: 1440px){
+						margin-left: 10px;
+					}
+					@media (max-width: 1024px) {
+						margin-left: 0.977vw;
+					}
+					@media (max-width: 767px){
+						margin-left: 1.867vw;
+					}
+				}
+			}
+		}
+	
+		&__right {
+			flex: 0 1 65%;
+			@media (max-width: 1919px){
+				flex: 0 1 65%;
+			}
+			@media (max-width: 1440px){
+				flex: 0 1 65%;
+			}
+			@media (max-width: 767px){
+				flex: 1 1 100%;
+				br {
+					display: none;
+				}
+			}
+		}
+	
+		&__title {
+			color: #ffffff;
+			
+			@media (min-width: 2000px){
+				br {
+					display: none;
+				}
+			}
+			span {
+				opacity: 0.4;
+				color: #F5F5F5;
+			}
+		}
+	
+		&__items {
+			display: flex;
+			@media (max-width: 767px){
+				flex-wrap: wrap;
+			}
+		}
+	
+			&__item {
+				flex: 0 1 33.333%;
+				min-height: 320px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				padding: 20px 30px 0;
+				border-left: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+				@media (max-width: 1919px){
+					padding: 15px 25px 0;
+					min-height: 240px;
+				}
+				@media (max-width: 1440px){
+					padding: 15px 15px 0;
+					min-height: 245px;
+				}
+				@media (max-width: 1024px){
+					padding: 1.465vw 1.465vw 0;
+					min-height: 23.926vw;
+				}
+				@media (max-width: 767px){
+					flex: 1 1 100%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					flex-direction: row;
+					border: none;
+					border-top: 0.267vw solid rgba($color: #ffffff, $alpha: 1.0);
+					min-height: auto;
+					padding: 0;
+					padding-top: 1.333vw;
+					&:first-child {
+						border-left: none;
+					}
+					&:not(:first-child) {
+						margin-top: 6.667vw;
+					}
+				}
+				&-top {
+					font-family: 'Suisse Intl';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 48px;
+					line-height: 56px;
+					letter-spacing: -0.02em;
+					color: #FFFFFF;
+					@media (max-width: 1919px){
+						font-size: 36px;
+						line-height: 42px;
+					}
+					@media (max-width: 1440px){
+						font-size: 28px;
+						line-height: 32px;
+					}
+					@media (max-width: 1024px) {
+						font-size: 2.734vw;
+						line-height: 3.125vw;
+					}
+					@media (max-width: 767px){
+						font-size: 5.333vw;
+						line-height: 6.133vw;
+					}
+				}
+				
+				&-bottom {
+					font-family: 'Suisse Intl';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 21px;
+					color: #FFFFFF;
+					@media (max-width: 1919px){
+						font-size: 14px;
+						line-height: 16px;
+					}
+					@media (max-width: 1440px){
+						font-size: 14px;
+						line-height: 16px;
+					}
+					@media (max-width: 1440px) {
+						font-size: 1.367vw;
+						line-height: 1.563vw;
+					}
+					@media (max-width: 767px){
+						font-size: 3.200vw;
+						line-height: 3.733vw;
+					}
+				}
+			}
+}

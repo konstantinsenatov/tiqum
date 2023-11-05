@@ -1,0 +1,181 @@
+.new-page1 {
+	.flex-lr {
+		border: none;
+	}
+	.new-page__header {
+		.flex-lr {
+			border-top: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+			@media (max-width: 1024px){
+				border-top: 0.098vw solid rgba($color: #ffffff, $alpha: 0.2);
+			}
+			@media (max-width: 767px){
+				border-top: 0.267vw solid rgba($color: #ffffff, $alpha: 0.2);
+			}
+		}
+	}
+	.new-page1__serveces-title  {
+		opacity: 0.4;
+		margin-bottom: 30px;
+		@media (max-width: 1024px){
+			margin-bottom: 2.930vw;
+		}
+		@media (max-width: 767px){
+			margin-bottom: 4vw;
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	.new-page1__services {
+		.flex-lr {
+			padding: 0;
+		}
+		.flex-lr__left {
+			padding-right: 30px;
+			@media (max-width: 1024px){
+				padding-right: 2.930vw;
+			}
+			@media (max-width: 767px){
+				padding: 0;
+			}
+			ul {
+				border-top: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+				padding-top: 30px;
+				@media (max-width: 1024px){
+					border-top: 0.098vw solid rgba($color: #ffffff, $alpha: 0.2);
+					padding-top: 2.930vw;
+				}
+				@media (max-width: 767px){
+					border-top: 0.267vw solid rgba($color: #ffffff, $alpha: 0.2);
+					padding-top: 4vw;
+				}
+				li {
+					opacity: 0.4;
+					font-family: 'Suisse Intl';
+					font-style: normal;
+					max-width: 260px;
+					margin-bottom: 20px;
+					transition: all 0.3s ease 0s;
+					font-weight: 400;
+					@media (max-width: 1024px){
+						margin-bottom: 2vw;
+						max-width: 100%;
+						opacity: 1;
+					}
+					@media (max-width: 767px){
+						margin-bottom: 6vw;
+					}
+					&:hover{
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.flex-lr__right {
+			.new-page1__services-items {
+				.item-services-new-page1 {
+					display: flex;
+					justify-content: space-between;
+					border-top: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+					padding-top: 30px;
+					margin-bottom: 200px;
+					@media (max-width: 1024px){
+						border-top: 0.098vw solid rgba($color: #ffffff, $alpha: 0.2);
+						padding-top: 2.930vw;
+						margin-bottom: 15vw;
+					}
+					@media (max-width: 767px){
+						border-top: 0.267vw solid rgba($color: #ffffff, $alpha: 0.2);
+						padding-bottom: 0;
+						br {
+							display: none;
+						}
+					}
+					&__number {
+						font-family: 'Suisse Intl';
+						font-style: normal;
+						font-size: 18px;
+						line-height: 21px;
+						@media (max-width: 1919px){
+							font-size: 14px;
+							line-height: 16px;
+						}
+						@media (max-width: 1024px){
+							font-size: 1.367vw;
+							line-height: 1.563vw;
+							margin-left: 8vw;
+						}
+						@media (max-width: 767px){
+							font-size: 3.200vw;
+							line-height: 3.733vw;
+						}
+					}
+					&__title {
+						span {
+							opacity: 0.3;
+						}
+					}
+					&--small {
+						margin-bottom: 30px;
+						@media (max-width: 1024px){
+							margin-bottom: 2.930vw;
+						}
+						@media (max-width: 767px){
+							margin-bottom: 8vw;
+						}
+						p {
+							font-family: 'Suisse Intl';
+							font-style: normal;
+							font-weight: 400;
+							letter-spacing: -0.02em;
+							color: #FFFFFF;
+							font-size: 32px;
+							line-height: 126.8%;
+							@media (max-width: 1919px){
+								font-size: 24.0167px;
+								line-height: 126.8%;
+							}
+							@media (max-width: 1440px){
+								font-size: 28px;
+								line-height: 32px;
+							}
+							@media (max-width: 1024px) {
+								font-size: 2.734vw;
+								line-height: 3.125vw;
+							}
+							@media (max-width: 767px){
+								font-size: 4.800vw;
+								line-height: 100%;
+								br {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.new-page1-archive-projects {
+		margin: 0;
+		.archive-projects__item {
+			border-top: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+			@media (max-width: 1024px){
+				border-top: 0.098vw solid rgba($color: #ffffff, $alpha: 0.2);
+			}
+			@media (max-width: 767px){
+				border-top: 0.267vw solid rgba($color: #ffffff, $alpha: 0.2);
+			}
+		}
+		.archive-projects__btns {
+			.archive-projects__btn {
+				color: #000000!important;
+			}
+		}
+		.archive-projects__right {
+			align-items: flex-start;
+		}
+	}
+}

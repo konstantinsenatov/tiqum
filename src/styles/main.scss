@@ -1,0 +1,38 @@
+// Переменные, миксины, функции
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+
+// CSS-файлы библиотек
+@import "vendor/libs";
+
+// Основное
+@import "base/fonts";
+@import "base/general";
+@import "base/reset";
+
+// Основное
+@import "modules/pager";
+@import "modules/tabs";
+@import "modules/messages";
+@import "modules/breadcrumb";
+@import "modules/details";
+@import "modules/file";
+@import "modules/progress";
+//@import "modules/exposed-filters";
+//@import "modules/tabledrag";
+//@import "modules/tableselect";
+//@import "modules/tablesort";
+//@import "modules/ui-dialog";
+
+// БЭМ-блоки
+@import "../blocks/modules/modules";
+
+// Страницы
+@import "pages/projects";
+@import "pages/portfolio";
+@import "pages/blog-info";
+@import "pages/blog";
+@import "pages/page";
+@import "pages/new-page";
+@import "pages/new-page1";

@@ -1,0 +1,139 @@
+extends ../layouts/default
+
+block variables
+	- const title = "TIQUM";
+
+block content
+	.wrapper
+		include ../../blocks/modules/header/header
+		.page 
+			.container 
+				.page-header.flex-lr 
+					.flex-lr__left 
+						.page-header__btns 
+							.page-header__btn Backend
+							.page-header__btn Web
+							.page-header__btn Mobile
+					.page-header__medals.flex-lr__right 
+						h1.general-title Электронная торговая площадка (ЭТП)
+						.page-header__labels
+							.page-header__label 
+								img(src="img/svg/grey-label.svg", alt="alt")
+							.page-header__label
+								img(src="img/svg/bronze.svg", alt="alt")
+			.portfolio
+				.portfolio__img 
+					img(src="img/pages/portfolio/hero.jpg", alt="alt")
+				.project-portfolio 
+					.container
+						.project-portfolio__top.flex-lr 
+							.flex-lr__left 
+								a(href="#").project-portfolio__link Смотреть проект →
+							.flex-lr__right 
+								.project-portfolio__title Разработка единого агрегатора торговли республики Башкортостан по 44-ФЗ и 223-ФЗ
+						.project-portfolio__items
+							.project-portfolio__item.flex-lr 
+								.flex-lr__left 
+								.project-portfolio__item-right.flex-lr__right
+									p Магазин малых закупок республики Башкортостан (ММЗРБ) – это единый агрегатор торговли республики, на котором публикуются и проводятся торговые процедуры бюджетом до 400 000 рублей по 44-ФЗ, а также коммерческие торги по 223-ФЗ.
+									p Отличительной особенностью проекта является наличие множества важный интеграций, которые команда Техинформа проводит на высоком системном уровне, обеспечивая надлежащее качество и безопасность оказываемых услуг.
+									.project-portfolio__item-img 
+										a(href="img/pages/portfolio/1.jpg" data-fancybox="gallery1")
+											img(src="img/pages/portfolio/1.jpg", alt="alt")
+									.project-portfolio__item-img
+										a(href="img/pages/portfolio/1.jpg" data-fancybox="gallery2")
+											img(src="img/pages/portfolio/1.jpg", alt="alt")
+										a(href="img/pages/portfolio/1.jpg" data-fancybox="gallery2")
+											img(src="img/pages/portfolio/1.jpg", alt="alt")
+							.project-portfolio__item.flex-lr
+								.flex-lr__left 
+									.project-portfolio__item-title Интеграция с ЕСИА
+								.project-portfolio__item-right.flex-lr__right
+									p Для регистрации заказчиков и поставщиков была разработана интеграция с единой системой идентификации и аутентификации (ЕСИА, портал Госуслуг). Для этого была зарегистрирована мнемоника разрабатываемой информационной системы (торговой площадки) в системе межведомственного электронного взаимодействия (СМЭВ), а также полностью пройдена сложная, продолжительная и бюрократическая процедура аккредитации в Минкомсвязи России.
+									p При регистрации заказчику или поставщику достаточно выполнить вход на ЭТП с помощью учетной записи компании в Госуслугах, и все данные автоматически будут перенесены в учетную запись торговой площадки.
+									.project-portfolio__item-img
+										a(href="img/pages/portfolio/3.jpg" data-fancybox="gallery3")
+											img(src="img/pages/portfolio/3.jpg", alt="alt")
+										a(href="img/pages/portfolio/3.jpg" data-fancybox="gallery3")
+											img(src="img/pages/portfolio/3.jpg", alt="alt")
+										a(href="img/pages/portfolio/3.jpg" data-fancybox="gallery3")
+											img(src="img/pages/portfolio/3.jpg", alt="alt")
+							.project-portfolio__item.flex-lr
+								.flex-lr__left 
+									.project-portfolio__item-title Интеграция с ЕИС zakupki.gov
+								.project-portfolio__item-right.flex-lr__right
+									p 
+										|Для проведения торгов по 44-ФЗ была разработана интеграция с единой информационной системой (ЕИС, федеральный Портал Закупок zakupki.gov.ru). С помощью такой интеграции разработанная торговая площадка получает структуру организации заказчика, а также важные параметры, например, лимит малых закупок на текущий год.
+							.project-portfolio__item.flex-lr 
+								.flex-lr__left 
+									.project-portfolio__item-title Интерфейс, который не позволяет ошибаться
+								.project-portfolio__item-right.flex-lr__right
+									p Отличительной особенностью торговой площадки является максимальное удобство для всех пользователей (заказчиков и поставщиков).
+									.project-portfolio__item-img 
+										a(href="img/pages/portfolio/3.jpg" data-fancybox="gallery4")
+											img(src="img/pages/portfolio/3.jpg", alt="alt")
+										a(href="img/pages/portfolio/3.jpg" data-fancybox="gallery4")
+											img(src="img/pages/portfolio/3.jpg", alt="alt")
+										a(href="img/pages/portfolio/3.jpg" data-fancybox="gallery4")
+											img(src="img/pages/portfolio/3.jpg", alt="alt")
+										a(href="img/pages/portfolio/3.jpg" data-fancybox="gallery4")
+											img(src="img/pages/portfolio/3.jpg", alt="alt")
+									p Такой уровень удобства интерфейса был достигнут благодаря предварительному глубокому и детальному прототипированию пользовательского интерфейса, и реализации такого сценария использования торговой площадки, при котором для пользователя исключается возможность совершения ошибок, а на каждом этапе работе с ЭТП отображается или запрашивается только нужная в данный момент информация.
+						.project-portfolio__bottom.flex-lr
+							.project-portfolio__left.flex-lr__left
+								.project-portfolio__bottom-title Бронза и серебро на крупнейшем конкурсе digital-решения в восточной европе Tagline 2021 подтверждает актуальность задачи и путь её решения
+							.project-portfolio__right.flex-lr__right 
+								.project-portfolio__bottom-items 
+									.project-portfolio__bottom-item ТОП 1 в разработке
+									.project-portfolio__bottom-item ТОП4 в рейтинге эффективности интернет-банков
+				.portfolio__next-cases.next-cases-portfolio
+					.next-cases-portfolio__container.container 
+						.next-cases-portfolio__flex-lr.flex-lr 
+							.next-cases-portfolio__flex-left.flex-lr__left 
+							.next-cases-portfolio__flex-right.flex-lr__right 
+								.next-cases-portfolio__flex-title.general-title 
+									|Следующие 
+									br
+									|кейсы
+						.next-cases-portfolio__projects
+							.items-projects  
+								.item-projects.item-projects-dark
+									a(href="#").item-projects__content.item-projects-content-blue
+										figure
+											.item-projects__header
+												.item-projects__title ATM и терминалы оплаты банка 
+												.item-projects__btns 
+													.item-projects__btn Backend
+													.item-projects__btn Web
+													.item-projects__btn Mobile
+												.item-projects__text 
+													|Интерфейс и верстка экранов для 
+													br
+													|банкоматов NCR, WinCor, Nautilus и 
+													br
+													|платежных терминалов
+											.item-projects__img 
+												img(src="img/item-projects/atm.png", alt="alt")
+								.item-projects
+									a(href="#").item-projects__content.item-projects-content-grey-dark
+										figure
+											.item-projects__header
+												.item-projects__title Romeks 
+												.item-projects__btns 
+													.item-projects__btn Backend
+													.item-projects__btn Web
+													.item-projects__btn Mobile
+												.item-projects__text 
+													|Сайты застройщика Ромекс 
+													br
+													|Девелопмент
+											.item-projects__img 
+												img(src="img/item-projects/romeks.png", alt="alt")
+
+		include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="https://code.jquery.com/jquery-3.6.1.min.js") 
+	script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js") 
+	script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js") 
+	script(src="js/main.js")

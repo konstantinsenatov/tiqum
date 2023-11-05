@@ -1,0 +1,23 @@
+.pager {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142.8%;
+
+  &__items {
+    clear: both;
+    text-align: center;
+  }
+
+  &__item {
+    display: inline;
+    padding: 0.5em;
+
+    &.is-active {
+      font-weight: bold;
+    }
+  }
+}

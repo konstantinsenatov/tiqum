@@ -1,0 +1,80 @@
+extends ../layouts/default
+
+block variables
+	- const title = "TIQUM";
+
+block content
+	.wrapper.main-page
+		include ../../blocks/modules/header/header
+		.page(style="position:relative" )
+			.new-page
+				.new-page__image(data-depth='0.2')
+					img(src="img/pages/new-page/img.jpg", alt="alt")
+				.new-page__header 
+					.container
+						.flex-lr 
+							.flex-lr__left 
+							.flex-lr__right 
+								.new-page__title-small Дизайн и проектирование <br> интерфейсов
+				.new-page__items 
+					a.new-page__item
+						figure.container
+							.flex-lr 
+								.flex-lr__left 
+									p 01
+								.flex-lr__right 
+									.new-page__item-title.general-title Создаем умный дизайн, <br>
+										span который помогает<br> продавать<br> и увеличивает<br> удовлетворенность<br> клиентов
+					a.new-page__item
+						figure.container
+							.flex-lr 
+								.flex-lr__left 
+									p 02
+								.flex-lr__right 
+									.new-page__item-title.general-title Можем превратить любые<br> сложные понятия 
+										span и<br> невероятные идеи в<br> красивые, простые и<br> удобные<br> интерфейсы
+					a.new-page__item
+						figure.container
+							.flex-lr 
+								.flex-lr__left 
+									p 03
+								.flex-lr__right 
+									.new-page__item-title.general-title Разрабатываем UX-<br>концепции 
+										span для улучшения<br> клиентского опыта (СХ)
+					a.new-page__item
+						figure.container
+							.flex-lr 
+								.flex-lr__left 
+									p 04
+								.flex-lr__right 
+									.new-page__item-title.general-title Осуществляем дизайн-<br>поддержку проектов,<br> 
+										span требующих обновления<br> материалов и функционала
+				.new-page__items-small 
+					a.new-page__item-small
+						figure.container
+							.flex-lr 
+								.flex-lr__left 
+									p Интерфейс для облачной CRM: задачи, сделки, аналитика, контакты
+								.flex-lr__right 
+									.new-page__title-small Unicloud Business 365
+					a.new-page__item-small
+						figure.container
+							.flex-lr 
+								.flex-lr__left 
+									p Интерфейс интернет-банка для физических лиц. Концепция дизайна сайта
+								.flex-lr__right 
+									.new-page__title-small Интернет-банк «Уралсиб»
+					a.new-page__item-small
+						figure.container
+							.flex-lr 
+								.flex-lr__left 
+									p Интерфейс для веб и мобильного приложения агрегатора фитнес- клубов
+								.flex-lr__right 
+									.new-page__title-small Onefit
+
+		include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="https://code.jquery.com/jquery-3.6.1.min.js") 
+	script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+	script(src="js/main.js")
