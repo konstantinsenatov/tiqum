@@ -2,7 +2,6 @@
 Main page: https://konstantinsenatov.github.io/tiqum/dist/index.html
 
 Internal pages:
-  - https://konstantinsenatov.github.io/tiqum/dist/index.html
   - https://konstantinsenatov.github.io/tiqum/dist/blog-info.html
   - https://konstantinsenatov.github.io/tiqum/dist/blog.html
   - https://konstantinsenatov.github.io/tiqum/dist/new-page.html
